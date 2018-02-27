@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:700);
+
+$blue: #092B40;
+
+body {
+  background-color: brown;
+}
+
+.container {
+  @extend body;
+  display: table;
+  margin: 2% auto auto auto;
+  #jumboOne {
+    @extend .container;
+    color: white;
+    text-align: center;
+    font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover, &:visited {
+    @extend a;
+  }
+}
+
+input {
+  
+  &[type=search] {
+    border: white; //remove white borders
+    background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat; //also removes white background because it's a gif
+    background-size: contain;
+  
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+    -webkit-border-radius: 10em; //webkit for safari
+    -moz-border-radius: 10em; //moz for firefox
+    border-radius: 10em;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s; //all = all types of transitions
+    
+    &:focus {
+      background-color: #fff;
+      width: 500px;
+      padding-left: 32px;
+      color: black;
+      background-color: #fff;
+      cursor: auto;
+
+        &::-webkit-input-placeholder {
+          color: black;
+        }
+    }
+  }
+  
+}
+
+#jumboTwo {
+  display: table;
+  margin: 2% auto auto auto;
+  h2, h3{
+    color: black;
+  }
+}

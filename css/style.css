@@ -1,0 +1,55 @@
+@import url(https://fonts.googleapis.com/css?family=Rokkitt:700);
+body, .container, .container #jumboOne {
+  background-color: brown;
+}
+
+.container, .container #jumboOne {
+  display: table;
+  margin: 2% auto auto auto;
+}
+.container #jumboOne {
+  color: white;
+  text-align: center;
+  font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, Sans-Serif;
+}
+
+a, a:hover, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+input[type=search] {
+  border: white;
+  background: url(http://www.iconsdb.com/icons/preview/white/search-12-xxl.png) no-repeat;
+  background-size: contain;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+input[type=search]:focus {
+  background-color: #fff;
+  width: 500px;
+  padding-left: 32px;
+  color: black;
+  background-color: #fff;
+  cursor: auto;
+}
+input[type=search]:focus::-webkit-input-placeholder {
+  color: black;
+}
+
+#jumboTwo {
+  display: table;
+  margin: 2% auto auto auto;
+}
+#jumboTwo h2, #jumboTwo h3 {
+  color: black;
+}
